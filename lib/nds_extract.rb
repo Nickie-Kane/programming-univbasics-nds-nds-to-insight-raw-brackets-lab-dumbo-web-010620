@@ -24,7 +24,7 @@ def directors_totals(nds)
     #pp nds
     d_key = nds[row_index][:name]
     d_totals[d_key] = 0 
-    binding.pry
+    #binding.pry
 
      
   row_index += 1

@@ -22,7 +22,7 @@ def directors_totals(nds)
   d_totals = 0
   while row_index < nds.count
     #pp nds
-    puts nds[row_index][:worldwide_gross]
+    nds[row_index][:worldwide_gross]
     binding.pry
 
      

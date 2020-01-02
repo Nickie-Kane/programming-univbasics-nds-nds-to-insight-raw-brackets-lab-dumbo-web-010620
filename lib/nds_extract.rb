@@ -19,10 +19,11 @@ def directors_totals(nds)
   #
   # Be sure to return the result at the end!
   row_index = 0
-  d_totals = 0
+  d_totals = {}
   while row_index < nds.count
     #pp nds
-    nds[row_index][:worldwide_gross]
+    d_key = nds[row_index][:name]
+    d_totals[d_key] = 0 
     binding.pry
 
      

@@ -21,15 +21,12 @@ def directors_totals(nds)
   row_index = 0
   d_totals = {}
   while row_index < nds.count
-    #pp nds
     d_key = nds[row_index][:name]
     d_totals[d_key] = 0 
-    #binding.pry
     movie_index = 0
     while movie_index < nds[row_index][:movies].length do
       movie = nds[row_index][:movies][movie_index]
       d_totals[d_key] += movie[:worldwide_gross]
-      #binding.pry
       
     movie_index += 1  
     end
